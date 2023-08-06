@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() { 
+  float num = 19.987654321;
+  printf("%f\n", num); 
+  printf("%.2f\n",num);
+  printf("%4.3f\n",num);
+  printf("%e\n", num); 
+  printf("%lf\n",num);
+  return 0; 
+}
