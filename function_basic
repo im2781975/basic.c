@@ -1,0 +1,12 @@
+#include<stdio.h>
+int my_friend(int x)
+{
+    printf("Relax\n");
+    return 2*x;
+}
+int main()
+{
+    int a=my_friend(5);
+    printf("%d\n",a);
+    return 0;
+}
