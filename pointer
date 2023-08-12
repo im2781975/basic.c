@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+    int a[9]={1,2,3,4,5,6,7,8,9};
+    for(int i=0;i<9;i++)
+    {
+        //printing first element
+       // printf("%p\n",a);
+       //printing second element
+       //printf("%p\n",(a+1));
+      //printing value
+       //printf("%d\n",*(a+1))
+         printf("%p\n",&a[i]);
+    }
+    int b=420;
+    int* p;
+    int* q;
+    p=&b;
+    printf("pointer in hexa_decimal:%p\n",p);
+    printf("pointer in decimal:%d\n",p);
+    printf("value is:%d\n",*p);
+    *p=421;
+    printf("After change value is:%d\n",*p);
+    q=p;
+    *q=422;
+    printf("After swap value is:%d\n",b);
+    int **r=&p;
+     **r=423;
+    printf("after using double pointer value is:%d\n",**r);
+    
+}
