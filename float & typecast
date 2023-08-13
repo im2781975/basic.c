@@ -1,3 +1,11 @@
+
+/*19.987654
+19.99
+19.988
+1.998765e+01
+19.987654
+6.250000
+0x7ffefa58edac 0x401240  */
 #include <stdio.h>
 int main() { 
   float num = 19.987654321;
@@ -6,8 +14,14 @@ int main() {
   printf("%4.3f\n",num);
   printf("%e\n", num); 
   printf("%lf\n",num);
-  //typecast
-  int num1=(int)num;
-  printf("%d",num1);
-  return 0; 
+  //typecasting
+  int a,*p;
+  double b,*q;
+  b=(double)25/4;
+  p=&a;
+  q=(double*)q;
+  printf("%lf\n",b);
+  printf("%p %p",p,q);
+  
+  
 }
