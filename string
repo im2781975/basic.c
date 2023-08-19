@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    char ch[]="ibrahim molla";
+    ch[13]='a';
+    ch[14]='\0';
+    printf("%s\n",ch);
+    printf("%c",ch[3]);
+    
+    
+}
